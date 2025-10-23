@@ -19,7 +19,9 @@ p{
     padding: 0;
     color: black;
 }
-
+a{
+    text-decoration: none;
+}
 
 body {
     margin: 0;
@@ -36,22 +38,24 @@ body {
     width: 100%;
     height: 40px;
     align-items: center;
-    /*position: fixed;*/
-    /*z-index: 1;*/
-    /*background: var(--bg);*/
+    position: fixed;
+    z-index: 1;
+    background: var(--bg);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero{
     width: 70px;
     height: 40px;
-    margin-left: 120px;
+    position: absolute;
+    left: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.hero p{
+.hero a{
     font-weight: bolder;
     font-size: 15px;
     color: var(--brand);
@@ -66,11 +70,7 @@ body {
     right: 125px;
 }
 
-.about,
-.menu,
-.hours,
-.find-us,
-.contact{
+.info-header-info{
     flex: 1;
     height: 40px;
     display: flex;
@@ -78,32 +78,26 @@ body {
     align-items: center;
 }
 
-.about p,
-.menu p,
-.hours p,
-.find-us p,
-.contact p{
+.info-header-info a{
     color: var(--brand);
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.about:hover,
-.menu:hover,
-.hours:hover,
-.find-us:hover,
-.contact:hover,
+
+.info-header-info:hover,
 .hero:hover
 {
     opacity: 0.7;
-    transition: 0.5s;
+    transition: 0.3s ease-in-out;
 }
 
 .img-container{
     position: relative;
     display: inline-block;
     width: 100%;
+    margin-top: 35px;
 }
 
 .bg-pic{
@@ -189,7 +183,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .O-card{
@@ -203,6 +197,7 @@ body {
     align-items: center;
     position: relative;
     margin-bottom: 120px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .O-card1-text{
@@ -253,6 +248,14 @@ body {
     border-radius: 20px;
     padding: 5px 10px;
     border: 1px solid rgb(233, 228, 219);
+    cursor: pointer;
+}
+
+#Fresh:hover,
+#Wood:hover,
+#House:hover{
+    background-color: rgba(33, 104, 105, 0.5);
+    transition: 0.4s ease;
 }
 
 .seconed-card{
@@ -274,6 +277,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .head{
@@ -376,6 +380,7 @@ body {
     margin-top: 75px;
     border: 1px solid rgb(233, 228, 219);
     position: relative;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .IV-card1{
@@ -492,6 +497,7 @@ body {
     margin-top: 40px;
     border: 1px solid rgb(233, 228, 219);
     position: relative;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #location{
@@ -529,4 +535,58 @@ body {
 #name:hover{
     opacity: 0.4;
     transition: 0.6s ease;
+}
+
+@media (max-width: 769px) {
+    .first-cards,
+    .third-card,
+    .fourth-card {
+        grid-template-columns: repeat(1, auto);
+    }
+    .seconed-card {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .hero{
+        left: 20px;
+    }
+
+    .info-header{
+        right: 20px;
+    }
+
+    #O-card-1{
+        margin-bottom: 10px;
+    }
+
+    #M{
+        top: -15%;
+        left: 15%;
+    }
+
+    #P{
+        bottom: -218%;
+    }
+
+    .IV-card2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .V-card2{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .first-cards,
+    .third-card,
+    .fourth-card {
+        grid-template-columns: repeat(2, auto);
+    }
+    .seconed-card {
+        grid-template-columns: repeat(3, auto);
+    }
+
+
 }
