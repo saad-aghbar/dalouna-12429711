@@ -14,6 +14,11 @@
     --border: #e9e3db;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
+
 p{
     margin: 0;
     padding: 0;
@@ -542,16 +547,59 @@ body {
 
 @media (max-width: 769px) {
 
-    html { font-size: 14px; }
+    html {
+        font-size: 14px;
+    }
 
-    .bg-pic { height: 360px; }
-    .pic-text-container { top: 26%; }
-    #MD { font-size: 9px; padding: 3px 9px; }
-    #WK { font-size: 26px; }
-    #DS { width: 85%; font-size: 13px; }
+    body{
+        padding-top: 0;
+    }
 
-    #pic-button { width: 88px; padding: 10px 0; border-radius: 26px; }
-    #pic-button a { font-size: 12px; }
+    #home {
+        height: 35px;
+    }
+    .hero {
+        width: 60px;
+        height: 35px;
+        left: 60px;
+    }
+    .hero a {
+        font-size: 14px;
+    }
+    .info-header {
+        right: 60px;
+        width: 300px;
+    }
+
+    .info-header-info a {
+        font-size: 13px;
+    }
+
+    .bg-pic {
+        height: 360px;
+    }
+    .pic-text-container {
+        top: 26%;
+    }
+    #MD {
+        font-size: 9px;
+        padding: 3px 9px;
+    }
+    #WK {
+        font-size: 26px;
+    }
+    #DS {
+        width: 85%; font-size: 13px;
+    }
+
+    #pic-button {
+        width: 88px;
+        padding: 10px 0;
+        border-radius: 26px;
+    }
+    #pic-button a {
+        font-size: 12px;
+    }
 
     .first-cards,
     .third-card,
@@ -562,13 +610,6 @@ body {
         grid-template-columns: repeat(1, auto);
     }
 
-    .hero{
-        left: 20px;
-    }
-
-    .info-header{
-        right: 20px;
-    }
 
     #O-card-1{
         margin-bottom: 10px;
