@@ -56,7 +56,7 @@ body {
     width: 70px;
     height: 40px;
     position: absolute;
-    left: 120px;
+    left: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,7 @@ body {
     display: flex;
     width: 350px;
     height: 40px;
-    right: 125px;
+    right: 8%;
 }
 
 .info-header-info{
@@ -106,6 +106,7 @@ body {
     display: inline-block;
     width: 100%;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 
 .bg-pic{
@@ -191,7 +192,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 .O-card{
@@ -204,7 +205,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    margin-bottom: 120px;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -264,6 +264,27 @@ body {
 #House:hover{
     background-color: rgba(33, 104, 105, 0.5);
     transition: 0.4s ease;
+}
+
+.seconed-card-container{
+    display: block;
+    --gap: 15px;
+    --col: 280px;
+    max-width: calc(var(--col) * 3 + var(--gap) * 2);
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+#M{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#P{
+    font-size: 13px;
+    color: gray;
+    margin-top: 2px;
 }
 
 .seconed-card{
@@ -356,19 +377,6 @@ body {
     color: gray;
     line-height: 1.2;
 }
-#M{
-    position: absolute;
-    top: -15%;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-#P{
-    position: absolute;
-    bottom: -9%;
-    font-size: 13px;
-    color: gray;
-}
 
 .third-card{
     display: grid;
@@ -376,7 +384,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 35px;
+    margin-bottom: 75px;
 }
 
 .IV-card1,
@@ -385,7 +393,6 @@ body {
     width: 430px;
     height: 240px;
     border-radius: 10px;
-    margin-top: 75px;
     border: 1px solid rgb(233, 228, 219);
     position: relative;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
@@ -493,7 +500,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 .V-card1,
@@ -502,7 +509,6 @@ body {
     width: 430px;
     height: 200px;
     border-radius: 10px;
-    margin-top: 40px;
     border: 1px solid rgb(233, 228, 219);
     position: relative;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
@@ -523,7 +529,6 @@ body {
 .footer{
     width: 100%;
     height: 70px;
-    margin-top: 40px;
     border-top: 1px solid rgb(233, 228, 219);
 }
 
@@ -559,15 +564,14 @@ body {
         height: 35px;
     }
     .hero {
-        width: 60px;
         height: 35px;
-        left: 60px;
+        left: 8%;
     }
     .hero a {
         font-size: 14px;
     }
     .info-header {
-        right: 60px;
+        right: 8%;
         width: 300px;
     }
 
@@ -581,6 +585,7 @@ body {
     .pic-text-container {
         top: 26%;
     }
+
     #MD {
         font-size: 9px;
         padding: 3px 9px;
@@ -589,7 +594,8 @@ body {
         font-size: 26px;
     }
     #DS {
-        width: 85%; font-size: 13px;
+        width: 85%;
+        font-size: 13px;
     }
 
     #pic-button {
@@ -610,27 +616,8 @@ body {
         grid-template-columns: repeat(1, auto);
     }
 
-
-    #O-card-1{
-        margin-bottom: 10px;
-    }
-
-    #M{
-        top: -15%;
-        left: 15%;
-    }
-
-    #P{
-        bottom: -218%;
-    }
-
-    .IV-card2{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .V-card2{
-        margin-top: 10px;
+    .seconed-card-container{
+        max-width: calc(var(--col) + var(--gap) * -0.2);
     }
 }
 
